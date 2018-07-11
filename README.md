@@ -33,5 +33,5 @@ Javascript plugin to drag and drop list elements
 
 You can specify your custom classes and use callback on every position changing.
 
-<img src="./readme/example_1.png">
-<img src="./readme/example_2.png">
+<img src="./readme/img/example_1.png">
+<img src="./readme/img/example_2.png">
