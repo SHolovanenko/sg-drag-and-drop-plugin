@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>!DOCTYPE</title>
+    <meta charset="utf-8">
+
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./sg-drag-and-drop-plugin.js"></script>
+    <script>
+        $(document).ready(function() {
+            addSortHandler();
+            /* or you can specify your custom classes with the params */
+            //addSortHandler(function(){}, classSection, classElement, classElementDrag);
+
+            /* you can call callback on each position changing */
+            //addSortHandler(function(){
+            //  do somth
+            //});
+        });
+    </script>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .sortable-list {
+            width: 600px;
+            background-color: #eeeeee;
+            height: 90vh;
+        }
+
+        .sortable {
+            border: 1px solid #000;
+            background-color: #fff;
+            width: 400px;
+            margin: 10px;
+        }
+
+        .sortable .element-drag {
+            height: 20px;
+            background-color: aquamarine;
+        }
+
+        .sortable .element-content {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sortable-list">
+        <div class="sortable">
+            <div class="element-drag">...</div>
+            <div class="element-content">
+                <h3>Element 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique nisl a velit aliquet scelerisque.
+                    Donec porta aliquet mauris, quis condimentum diam dignissim ut. Morbi elit purus, vestibulum ut elit
+                    ac, iaculis mollis augue.</p>
+            </div>
+        </div>
+
+        <div class="sortable">
+            <div class="element-drag">...</div>
+            <div class="element-content">
+                <h3>Element 2</h3>
+                <p>Pellentesque tempus, justo eu vestibulum egestas, dolor est aliquet nunc, 
+                    at mattis turpis sapien vel enim.</p>
+            </div>
+        </div>
+
+        <div class="sortable">
+            <div class="element-drag">...</div>
+            <div class="element-content">
+                <h3>Element 3</h3>
+                <p>In elementum metus urna, id fermentum nibh venenatis a. In vitae bibendum ante, 
+                    non porttitor eros. Vivamus orci purus, commodo ac diam non, 
+                    pharetra blandit mauris.</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
